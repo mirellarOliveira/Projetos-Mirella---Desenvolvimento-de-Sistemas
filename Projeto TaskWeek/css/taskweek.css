@@ -1,0 +1,401 @@
+/* Começo do header*/
+header{                                         
+  background-color: #8EAA94;
+  padding: 5px 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0e2bd;
+  animation: fadeIn 1s ease-in;
+}
+
+.ul_header{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+  
+.header_li{
+  list-style: none;
+  padding: 5px;
+  padding-left: 10px;
+  font-family: Poppins, Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  font-weight: 300;
+  color: #070707;
+}
+
+.Pesquisar{
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+  width: 700px;
+  height: 30px;
+}
+
+.logo {
+  color: rgb(255, 0, 0);
+}
+
+.formPesquisa{
+  width: 70%;
+  display: inline;
+  padding-left: 2%;
+}
+
+.header_logo{
+  padding-left: 25px;
+}
+
+.img_logo{
+  width: 135px;
+  height: 100%;
+}
+
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+.label{
+  padding-left: 20px;
+}
+
+.lupa{
+  width: 20px;
+  height: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+li.header_li a:hover{
+  text-decoration: underline;
+}
+/* Final do header*/
+
+
+/* Titulo dos textos laterais*/
+h2{
+  padding-bottom: 40px;
+  padding-top: 15px;
+}
+
+/*Banner grande*/
+.imagem-centralizada img{
+  width: 100vw;
+  max-width: 1895px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+
+/*Começo das imagens e dos textos da lateral*/
+.imagens-lateral{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.texto-lateral{
+  width: 50%;
+  min-width: 50vw;
+  text-align: justify;
+  font-family: Poppins, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  background-color: #8eaa94;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.imagens-lateral.invertida{
+  flex-direction: row-reverse;
+  width: 50%;
+}
+
+.img-lateral {
+  width: 50%;
+  max-width: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/*Final das imagens e dos textos da lateral*/
+
+/*Começo das imagens de avaliação*/
+.galeria{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 1px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 1px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 700px;
+  object-fit: cover;
+}
+/*Final das imagens de avaliação*/
+
+/*Começo do footer*/
+footer {
+  background-color: #8eaa94;
+  color: white;
+  font-family: Poppins, Roboto, Helvetica, Arial, sans-serif;
+  padding: 40px 0 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.conteudo_rodape {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.logo-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.img_logo_footer {
+  width: 200px;
+  height: auto;
+}
+
+.coluna_rodape h3 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.coluna_rodape h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.coluna_rodape ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coluna_rodape ul li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.coluna_rodape a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.coluna_rodape a:hover {
+  color: #e0e0e0;
+  text-decoration: underline;
+}
+
+.social_media {
+  display: flex;
+  gap: 15px;
+  padding-left: 15px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  stroke: #e0e0e0;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.copyright {
+  background-color: #7b9180;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.li_termos{
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .conteudo_rodape {
+      grid-template-columns: 1fr;
+      gap: 20px;
+  }
+  
+  .logo-column {
+      align-items: center;
+      text-align: center;
+  }
+  
+  .coluna_rodape {
+      text-align: center;
+  }
+  
+  .coluna_rodape h3::after {
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  
+  .social_media {
+      justify-content: center;
+  }
+}
+/*Final do footer*/
+
+/*Declaração das animações*/
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Final da declaração*/
+
+/*Adicionar animação quando carregar a página*/
+.img-lateral, .texto-lateral, h1, h2, .galeria2, .galeria, .imagem-centralizada {
+  animation: fadeUp 0.9s ease forwards;
+  opacity: 0;
+}
+
+/*Adicionar animação para destacar as avaliações*/
+.card img {
+transition: transform 0.5s ease, box-shadow 0.9s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+
+
+

@@ -1,0 +1,117 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #f0e2bd;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    margin: auto;
+    width: 500px;
+    max-width: 90%;
+    animation: slideIn 0.7s ease;
+}
+
+.container form{
+    width: 100%;
+    height: 100%;
+    padding: 90px;
+    background-color: rgb(253, 253, 253);
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+.container form h1{
+    text-align: center;
+    text-decoration: #8EAA94;
+    margin-bottom: 20px;
+}
+
+.container form .form-control{
+    width: 100%;
+    height: 100%;
+    background-color: #8EAA94;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;   
+}
+
+.btn{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:#6C3751;
+    padding:10px;
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    margin-top: 10%;
+    cursor: pointer;
+    color: aliceblue;
+}
+.btn:hover{
+    background-color: #52223C;
+    transform: scale(1.03);
+}
+
+.container form .bnt:hover{
+    opacity: .0;
+}
+
+.senha{
+    color: #6B666D;
+    padding-top: 5%;
+}
+
+.icon-bar {
+    width: 90px;
+    background-color: #8EAA94;
+}
+  
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: aliceblue;
+    font-size: 36px;
+}
+  
+.icon-bar a:hover {
+    background-color: #52223C;
+}
+  
+.active {
+    background-color: #6C3751;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.login h1 {
+    animation: fadeIn 1s ease;
+}

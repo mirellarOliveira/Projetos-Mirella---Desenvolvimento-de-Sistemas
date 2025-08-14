@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskWeek - Gerenciador de Tarefas</title>
+    <link rel="icon" href="img/logo_aba.png">
+    <link href="css/gerenciador.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="header_ul">
+                <button class="botao" onclick="Menu()">&#9776</button>
+                <li class="header_li"><a href="taskweek.html" target="blank"><img src="img/logo.PNG" class="img_logo"></a></li>
+                <form class="formPesquisa">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+                    <input class="Pesquisar" type="text" placeholder="Pesquisar uma tarefa" /><br>
+                </form>
+                <li class="header_li"><img src="img/foto_perfil.PNG" class="img_perfil" ></li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul class="menu_vertical" id="menu_vertical">
+        <div class="alinhar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-check-icon lucide-clipboard-check"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>
+            <li class="li_lista_esquerda">Tarefas</li>
+        </div>
+        <div class="alinhar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell-icon lucide-bell"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg>
+            <li class="li_lista_esquerda">Lembretes</li>
+        </div>
+        <div class="alinhar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil-icon lucide-pencil"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>
+            <li class="li_lista_esquerda">Editar</li>
+        </div>
+        <div class="alinhar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-inbox-icon lucide-inbox"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>
+            <li class="li_lista_esquerda">Arquivo</li>
+        </div>
+        <div class="alinhar">  
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2-icon lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>
+            <li class="li_lista_esquerda">Lixeira</li>
+        </div>
+    </ul>
+
+    <section class="section_escrever">
+        <section class="section_escrever1">
+            <form class="form_escrever">
+                <textarea class="escrever" type="text" placeholder="Digite suas tarefas!"></textarea>
+            </form>
+        </section>
+    </section>
+
+    <div id="quadrado" onclick="blocoTarefa()"></div>
+
+    <script src="./js/gerenciador1.js"></script>
+</body>
+</html>

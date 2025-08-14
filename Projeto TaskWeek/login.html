@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskWeek - Login Usuário</title>
+    <link rel="icon" href="img/logo_aba.png">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="icon-bar">
+        <a class="active" href="taskweek.html"><i class="fa fa-home"></i></a>
+    </div>
+
+    <div class="container">
+        <form action="">
+
+        <div class="login">
+            <h1 style="  color: #6B666D;">Login do Usuário</h1>
+        </div>
+
+        <div class="form-group">
+            <label style="color:#6B666D; " for="">Email:</label>
+            <input id="email_user" type="text" class="form-control" placeholder="Email" required>
+        </div>
+
+        <div class="form-group">
+            <div class="senha">
+                <label for="">Senha:</label>
+            </div>
+            <input id="senha_user" type="password" class="form-control" placeholder="Senha" required>
+        </div>
+
+        <button class="btn" onclick="Login()" type="button">Enviar</button>
+        </form>
+    </div> 
+
+    <script src="./js/login.js"></script>
+</body>
+</html>
